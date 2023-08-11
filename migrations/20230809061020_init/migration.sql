@@ -1,0 +1,33 @@
+-- CreateTable
+CREATE TABLE `ecommerce_products` (
+    `id` INTEGER NOT NULL AUTO_INCREMENT,
+    `name` VARCHAR(191) NOT NULL,
+    `description` VARCHAR(191) NULL,
+    `price` DOUBLE NOT NULL,
+    `image_url` VARCHAR(191) NULL,
+    `category` VARCHAR(191) NOT NULL,
+    `user_id` INTEGER NOT NULL,
+    `username` VARCHAR(191) NOT NULL,
+    `email` VARCHAR(191) NOT NULL,
+    `password` VARCHAR(191) NOT NULL,
+    `first_name` VARCHAR(191) NOT NULL,
+    `last_name` VARCHAR(191) NOT NULL,
+    `address` VARCHAR(191) NULL,
+    `phone_number` VARCHAR(191) NULL,
+    `order_date` DATETIME(3) NOT NULL,
+    `status` VARCHAR(191) NOT NULL,
+    `total_amount` DOUBLE NOT NULL,
+    `quantity` INTEGER NOT NULL,
+    `subtotal` DOUBLE NOT NULL,
+    `street_address` VARCHAR(191) NOT NULL,
+    `city` VARCHAR(191) NOT NULL,
+    `state` VARCHAR(191) NOT NULL,
+    `postal_code` VARCHAR(191) NOT NULL,
+    `country` VARCHAR(191) NOT NULL,
+    `rating` INTEGER NOT NULL,
+    `comment` VARCHAR(191) NULL,
+    `created_at` DATETIME(3) NOT NULL DEFAULT CURRENT_TIMESTAMP(3),
+    `updated_at` DATETIME(3) NOT NULL,
+
+    PRIMARY KEY (`id`)
+) DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
